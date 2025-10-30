@@ -1,4 +1,4 @@
-Open Challenge:
+<h3>Open Challenge:</h3>
     
 We draw two boxes on two sides. We set a threshold, and if a pixel has RGB value within the threshold, it will be counted as "black". In order for the robot at the middle of the path, the fill of the two boxes must be equal. Therefore, our algorithm compare the fill ratio of the two boxes and use PID turning for the steering.
 
@@ -8,7 +8,7 @@ We also have a box at the center of the frame. When a color between orange or bl
   <img src="Images/Open.png" width="600">
 </p>
 
-Obstacle Challenge:
+<h3>Obstacle Challenge</h3>
 
 Scenario 1: Traffic signs visible
 The camera detects a region of high density of either red or green in the field. It will draw a rectangle box around the block. For the robot to avoid the sign in the desired direction, the boxes must align with the two lines. Therefore, by measuring the distance between the base of the rectangles and the lines, an error value can be calculated and used for PID steering. 
