@@ -21,28 +21,33 @@ Motors: Technic™ Large Motor L and XL
     
 With a LEGO chassis, we can opt for LEGO motors, which are way lighter than other pervasive,conventional robotics motors such as the GA25 370. Even though the torque figures and RPM are not as impressive, the benefit of having a manageable wiring system and light plastic case defenitely outweight this disadvantage. 
 
-For our powertrain, we use the Technic Powered up L motor instead of the Original Spike Motors because its much higher RPM (315 vs 250) and its smaller size, and the breadth of mounting hole on its case makes it extremely versatile in case of mounting position.
+For our powertrain, we use the Technic Powered up L motor instead of the Original Spike Motors because its much higher RPM (315 vs 250) and its smaller size, and the breadth of the mounting hole on its case makes it extremely versatile in case of mounting position.
 
-For our steering compartment, we utilize the Technic Powered up XL motor with a 3:1 gearbox to maximize torque. The stall torque of this motor is higher than the Spike Angular Motor (40Ncm vs 25Ncm). However, after completing our first version of the robot, we find out that such impressive torque figures is still not sastisfactory for the turning compartment
+For our steering compartment, we utilize the Technic Powered up XL motor with a 3:1 gearbox to maximize torque. The stall torque of this motor is higher than the Spike Angular Motor (40Ncm vs 25Ncm). However, after completing our first version of the robot, we found out that such impressive torque figures are still not satisfactory for the turning compartment
+<p align="center">
+  <img src="Images/Powered%20Up%20Motors.png" width="600">
+</p>
 
-![](Images/Powered%20Up%20Motors.png)
 
 Differential drivetrain: 
 
 During cornering scenarios, the two rear wheels must rotate at diffent angular velocity in order to maintain the difference between the radius of the two circles accomodated by the inner wheel and outer wheel. Therefore, we implement a differential system. 
 
-![](Images/Differential.png)
+<p align="center">
+  <img src="Images/Differential.png" width="600">
+</p>
 
 Ackermann Steering:
 
 Upon steering, the inner side of the robot facing the center of the rotation aligns with a circle of smaller radius, which has a tangent of different angle compared to the outer circle. In order to achieve the maximum turning effect, the wheel need to steer at different angle in order to accomodate the tangents, and we will use ackermann steering to achieve this.
-
-![](Images/Ackermann.png)
-
-![](Images/Ackermann_2.png)
+<p align="center">
+  <img src="Images/Ackermann.png" width="350">
+  <img src="Images/Ackermann_2.png" width="350">
+</p>
 
 Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack
 
 We use Matrix Robotics's M-Vision Cam over other cameras because it has a processing unit inside the camera itself. Consequently, the LEGO Spike Prime Hub does not have to execute extra image processing algorithms, prolonging the battery life and maintain a healthy load on the processing unit
-
-![](Images/M%20Vision%20Cam.jpg)
+<p align="center">
+  <img src="M%20Vision%20Cam" width="600">
+</p>
