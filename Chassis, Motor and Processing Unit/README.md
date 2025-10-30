@@ -49,5 +49,5 @@ Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack
 
 We use Matrix Robotics's M-Vision Cam over other cameras because it has a processing unit inside the camera itself. Consequently, the LEGO Spike Prime Hub does not have to execute extra image processing algorithms, prolonging the battery life and maintaining a healthy load on the processing unit
 <p align="center">
-  <img src="Images/M%20Vision%20Cam" width="600">
+  <img src="Images/M%20Vision%20Cam.jpg" width="600">
 </p>
