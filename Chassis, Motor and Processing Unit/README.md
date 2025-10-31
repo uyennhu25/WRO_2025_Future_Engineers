@@ -22,6 +22,10 @@ Between EV3 and Spike Prime, we chose Spike Prime even though the central proces
 | Weight (g) | 385 | 200 |
 | Volume Occupied (L) | 0.388 | 0.158 |
 
+<p align="right">
+  <img src="Images/EV3%20vs%20Spike.png" width="600">
+</p>
+
 <h3>Motors: Technic™ Large Motor L and XL</h3>
     
 With a LEGO chassis, we can opt for LEGO motors, which are way lighter than other pervasive, conventional robotics motors such as the GA25 370. Even though the torque figures and RPM are not as impressive, the benefit of having a manageable wiring system and light plastic case definitely outweighs this disadvantage. 
