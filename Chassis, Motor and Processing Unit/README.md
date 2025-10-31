@@ -16,15 +16,18 @@ We choose LEGO processing units, Spike Prime or Mindstorm EV3, over Arduino or R
 
 Between EV3 and Spike Prime, we chose Spike Prime even though the central processing unit of the Spike Prime has a lower clock speed, as the Spike Hub's performance is still adequate for our algorithms. The Spike Prime Hub, including battery, is around 200 grams, almost half as light as the EV3 Hub; the total volume occupied by the Spike Prime Hub is around 0.158L, more than half as small as the EV3 Hub, which occupies 0.388L. These two characteristics of the Spike Hub make it superior to use compared to the EV3 Hub 
 
-|      | Mindstorm EV3 | Spike Prime |
-|-----------|-----------|-----------|
+<div style="display: flex; align-items: center;">
+  <div>
+
+|                 | Mindstorm EV3 | Spike Prime |
+|-----------------|---------------|--------------|
 | CPU Clock Speed (MHz) | 300 | 100 |
 | Weight (g) | 385 | 200 |
 | Volume Occupied (L) | 0.388 | 0.158 |
 
-<p align="right">
-  <img src="Images/EV3%20vs%20Spike.png" width="600">
-</p>
+  </div>
+  <img src="Images/EV3%20vs%20Spike.png" width="400" style="margin-left: 20px;" />
+</div>
 
 <h3>Motors: Technic™ Large Motor L and XL</h3>
     
