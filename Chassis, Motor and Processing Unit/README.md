@@ -18,7 +18,7 @@ Between EV3 and Spike Prime, we chose Spike Prime even though the central proces
 
 |      | Mindstorm EV3 | Spike Prime |
 |-----------|-----------|-----------|
-| CPU Clock Speed (MHz) | 300 MHz | 100MHz |
+| CPU Clock Speed (MHz) | 300 | 100 |
 | Weight (g) | 385 | 200 |
 | Volume Occupied (L) | 0.388 | 0.158 |
 
