@@ -3,23 +3,23 @@ This is the GitHub repository of team NSWRO for the WRO 2025 Future Engineers Ca
 ![](/Team/Images/NSWRO.png)
 
 ## Content
-`Chassis, Motor and Porcessing Unit` This folder includes diagrams and images featuring the components of our robot.
-`Programming` This folder includes the programs and their corresponding illustrations.
-`Robot` This folder includes images of our robots from all views.
-`Team` These are the photos of our team!
+`Chassis, Motor and Porcessing Unit` This folder includes diagrams and images featuring the components of our robot.  
+`Programming` This folder includes the programs and their corresponding illustrations.  
+`Robot` This folder includes images of our robots from all views.  
+`Team` These are the photos of our team!  
 
 Our README consists of:
 - [Our Team](#our-team)
 - [Chassis, Motor and Processing Unit](#chassis-motor-and-processing-unit)
-  - Chassis Material
-  - Processing Unit
-  - Motors
-  - Differential Drivetrain
-  - Ackermann Steering
-  - Camera
+  - [Chassis Material](#chassis-material-choice-lego-and-pla)
+  - [Processing Unit](#processing-unit-lego-education-spike-prime)
+  - [Motors](#motors-technic-large-motor-l-and-xl)
+  - [Differential Drivetrain](#differential-drivetrain)
+  - [Ackermann Steering](#ackermann-steering)
+  - [Camera](#camera-matrix-robotics-m-vision-cam-with-type-c-cable-pack)
 - [Programming](#programming)
-  - Open challenge
-  - Obstable challenge
+  - [Open challenge](#open-challenge)
+  - [Obstable challenge](#obstacle-challenge)
 - [Vehicle Images](#vehicle-images)
 - [Videos](#video)
 
@@ -47,13 +47,13 @@ Low center of gravity
 Lightweight
 Minimum Size
 
-<h3>Chassis material choice: LEGO and PLA</h3>
+### Chassis material choice: LEGO and PLA
 
 We start the development of our robot using LEGO because we have extensive experience with building and assembling LEGO models. Lam participated in WRO 2023 and WRO 2024 in the Junior Category, so he is very familiar with building robots with LEGO as the main material.
 
 We 3D print several parts which does not exist in the current LEGO collection; they can accommodate LEGO just as good as authentic LEGO pieces, and the freedom of customisation helps us with reaching our main design principles with the chassis.
 
-<h3>[Processing Unit: LEGO® Education SPIKE™ Prime](processor)</h3>
+### Processing Unit: LEGO® Education SPIKE™ Prime
    
 We choose LEGO processing units, Spike Prime or Mindstorm EV3, over Arduino or Raspberry Pi because our experience shows that we can execute complicated algorithms at an acceptable level.
 
@@ -72,7 +72,7 @@ Between EV3 and Spike Prime, we chose Spike Prime even though the central proces
   <img src="Chassis, Motor and Processing Unit/Images/EV3 vs Spike.png" width="400" style="margin-left: 20px;" />
 </div>
 
-<h3>Motors: Technic™ Large Motor L and XL</h3>
+### Motors: Technic™ Large Motor L and XL
    
 With a LEGO chassis, we can opt for LEGO motors, which are way lighter than other pervasive, conventional robotics motors such as the GA25 370. Even though the torque figures and RPM are not as impressive, the benefit of having a manageable wiring system and light plastic case definitely outweighs this disadvantage.
 
@@ -84,7 +84,7 @@ For our steering compartment, we utilize the Technic Powered up XL motor with a 
 </p>
 
 
-<h3>Differential drivetrain</h3>
+### Differential drivetrain
 
 During cornering scenarios, the two rear wheels must rotate at different angular velocities to maintain the difference between the radius of the two circles accommodated by the inner wheel and outer wheel. Therefore, we implement a differential system.
 
@@ -92,7 +92,7 @@ During cornering scenarios, the two rear wheels must rotate at different angular
   <img src="Chassis, Motor and Processing Unit/Images/Differential.png" width="600">
 </p>
 
-<h3>Ackermann Steering</h3>
+### Ackermann Steering
 
 Upon steering, the inner side of the robot facing the center of the rotation aligns with a circle of a smaller radius, which has a tangent of a different angle compared to the outer circle. In order to achieve the maximum turning effect, the wheel need to steer at a different angle in order to accommodate the tangents, and we will use ackermann steering to achieve this.
 <p align="center">
@@ -100,7 +100,7 @@ Upon steering, the inner side of the robot facing the center of the rotation ali
   <img src="Chassis, Motor and Processing Unit/Images/Ackermann_2.png" width="350">
 </p>
 
-<h3>Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack</h3>
+### Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack
 
 We use Matrix Robotics's M-Vision Cam over other cameras because it has a processing unit inside the camera itself. Consequently, the LEGO Spike Prime Hub does not have to execute extra image processing algorithms, prolonging the battery life and maintaining a healthy load on the processing unit
 <p align="center">
@@ -109,7 +109,7 @@ We use Matrix Robotics's M-Vision Cam over other cameras because it has a proces
 
 ## Programming
 Here is our software documentation
-<h3>[Open Challenge:](#open)</h3>
+### Open Challenge
    
 We draw two boxes on two sides. We set a threshold, and if a pixel has RGB value within the threshold, it will be counted as "black". In order for the robot at the middle of the path, the fill of the two boxes must be equal. Therefore, our algorithm compare the fill ratio of the two boxes and use PID turning for the steering.
 
@@ -122,7 +122,7 @@ In addition to the main boxes, we include two small boxes at the bottom of the f
 
 
 
-<h3>Obstacle Challenge</h3>
+### Obstacle Challenge
 
 Scenario 1: Traffic signs visible
 The camera detects a region of high density of either red or green in the field. It will draw a rectangle box around the block. For the robot to avoid the sign in the desired direction, the boxes must align with the two lines. Therefore, by measuring the distance between the base of the rectangles and the lines, an error value can be calculated and used for PID steering.
@@ -145,12 +145,18 @@ After the robot completes 3 laps, the robot will align with the same method used
 </p>
 
 ## Vehicle Images
-![Front view](/Robot/Images/ver2/front_view.png)
-![Left view](/Robot/Images/ver2/left_view.png)
-![Right view](/Robot/Images/ver2/right_view.png)
-![Back view](/Robot/Images/ver2/back_view.png)
-![Top view](/Robot/Images/ver2/top_view.png)
-![Bottom view](/Robot/Images/ver2/bottom_view.png)
+<table>
+  <tr>
+    <td><img src="/Robot/Images/ver2/front_view.png" width="200"><br>Front view</td>
+    <td><img src="/Robot/Images/ver2/left_view.png" width="200"><br>Left view</td>
+    <td><img src="/Robot/Images/ver2/right_view.png" width="200"><br>Right view</td>
+  </tr>
+  <tr>
+    <td><img src="/Robot/Images/ver2/back_view.png" width="200"><br>Back view</td>
+    <td><img src="/Robot/Images/ver2/top_view.png" width="200"><br>Top view</td>
+    <td><img src="/Robot/Images/ver2/bottom_view.png" width="200"><br>Bottom view</td>
+  </tr>
+</table>
 
 ## Video
 This is our video for the open challenge!
