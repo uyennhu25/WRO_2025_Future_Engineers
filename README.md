@@ -9,21 +9,21 @@ This is the GitHub repository of team NSWRO for the WRO 2025 Future Engineers Ca
 `Team` These are the photos of our team!
 
 Our README consists of:
-- <a name="our_team">Our Team</a>
-- <a name="hardware">Chassis, Motor and Processing Unit</a>
-  - <a name="material">Chassis Material</a>
-  - <a name="processor">Processing Unit</a>
-  - <a name="motors">Motors</a>
-  - <a name="drivetrain">Differential Drivetrain</a>
-  - <a name="ackermann_steering">Ackermann Steering</a>
-  - <a name="camera">Camera</a>
-- <a name="software">Programming</a>
-  - <a name="open">Open challenge</a>
-  - <a name="obstable">Obstable challenge</a>
-- <a name="vehicle_photos">Vehicle Photos</a>
-- <a name="video">Videos</a>
+- [Our Team](#our-team)
+- [Chassis, Motor and Processing Unit](#chassis-motor-and-processing-unit)
+  - Chassis Material
+  - Processing Unit
+  - Motors
+  - Differential Drivetrain
+  - Ackermann Steering
+  - Camera
+- [Programming](#programming)
+  - Open challenge
+  - Obstable challenge
+- [Vehicle Images](#vehicle-images)
+- [Videos](#video)
 
-## [Our Team](#our-team)
+## Our Team
 ![](/Team/Images//Team%20Photo.jpg)
 
 <h3>Overall:</h3>
@@ -39,7 +39,7 @@ Our README consists of:
     Just like Do, this is Nhu's first season in WRO. However, her rich experience with programming and GitHub helped her build this impressive repository. Furthermore, he aided Lam in the programming process, making the programmes more efficient and the algorithms to be more accurate.
 
 
-## [Chassis, Motor and Processing unit](#hardware)
+## Chassis, Motor and Processing unit
 Here is our hardware documentation.
 <h3>Our main goal for the development of our chassis</h3>
 
@@ -47,7 +47,7 @@ Low center of gravity
 Lightweight
 Minimum Size
 
-<h3>[Chassis material choice: LEGO and PLA](#material)</h3>
+<h3>Chassis material choice: LEGO and PLA</h3>
 
 We start the development of our robot using LEGO because we have extensive experience with building and assembling LEGO models. Lam participated in WRO 2023 and WRO 2024 in the Junior Category, so he is very familiar with building robots with LEGO as the main material.
 
@@ -72,7 +72,7 @@ Between EV3 and Spike Prime, we chose Spike Prime even though the central proces
   <img src="Chassis, Motor and Processing Unit/Images/EV3 vs Spike.png" width="400" style="margin-left: 20px;" />
 </div>
 
-<h3>[Motors: Technic™ Large Motor L and XL](#motors)</h3>
+<h3>Motors: Technic™ Large Motor L and XL</h3>
    
 With a LEGO chassis, we can opt for LEGO motors, which are way lighter than other pervasive, conventional robotics motors such as the GA25 370. Even though the torque figures and RPM are not as impressive, the benefit of having a manageable wiring system and light plastic case definitely outweighs this disadvantage.
 
@@ -84,7 +84,7 @@ For our steering compartment, we utilize the Technic Powered up XL motor with a 
 </p>
 
 
-<h3>[Differential drivetrain](#drivetrain)</h3>
+<h3>Differential drivetrain</h3>
 
 During cornering scenarios, the two rear wheels must rotate at different angular velocities to maintain the difference between the radius of the two circles accommodated by the inner wheel and outer wheel. Therefore, we implement a differential system.
 
@@ -92,7 +92,7 @@ During cornering scenarios, the two rear wheels must rotate at different angular
   <img src="Chassis, Motor and Processing Unit/Images/Differential.png" width="600">
 </p>
 
-<h3>[Ackermann Steering](#ackermann_steering)</h3>
+<h3>Ackermann Steering</h3>
 
 Upon steering, the inner side of the robot facing the center of the rotation aligns with a circle of a smaller radius, which has a tangent of a different angle compared to the outer circle. In order to achieve the maximum turning effect, the wheel need to steer at a different angle in order to accommodate the tangents, and we will use ackermann steering to achieve this.
 <p align="center">
@@ -100,14 +100,14 @@ Upon steering, the inner side of the robot facing the center of the rotation ali
   <img src="Chassis, Motor and Processing Unit/Images/Ackermann_2.png" width="350">
 </p>
 
-<h3>[Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack](#camera)</h3>
+<h3>Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack</h3>
 
 We use Matrix Robotics's M-Vision Cam over other cameras because it has a processing unit inside the camera itself. Consequently, the LEGO Spike Prime Hub does not have to execute extra image processing algorithms, prolonging the battery life and maintaining a healthy load on the processing unit
 <p align="center">
   <img src="Chassis, Motor and Processing Unit/Images/M Vision Cam.jpg" width="400">
 </p>
 
-## [Programming](#software)
+## Programming
 Here is our software documentation
 <h3>[Open Challenge:](#open)</h3>
    
@@ -122,7 +122,7 @@ In addition to the main boxes, we include two small boxes at the bottom of the f
 
 
 
-<h3>[Obstacle Challenge:](#obstable)</h3>
+<h3>Obstacle Challenge</h3>
 
 Scenario 1: Traffic signs visible
 The camera detects a region of high density of either red or green in the field. It will draw a rectangle box around the block. For the robot to avoid the sign in the desired direction, the boxes must align with the two lines. Therefore, by measuring the distance between the base of the rectangles and the lines, an error value can be calculated and used for PID steering.
@@ -144,7 +144,7 @@ After the robot completes 3 laps, the robot will align with the same method used
   <img src="Programming/Images/Parking%20Diagram.png" width="600">
 </p>
 
-## [Vehicle Images](#vehicle_photos)
+## Vehicle Images
 ![Front view](/Robot/Images/ver2/front_view.png)
 ![Left view](/Robot/Images/ver2/left_view.png)
 ![Right view](/Robot/Images/ver2/right_view.png)
@@ -152,6 +152,6 @@ After the robot completes 3 laps, the robot will align with the same method used
 ![Top view](/Robot/Images/ver2/top_view.png)
 ![Bottom view](/Robot/Images/ver2/bottom_view.png)
 
-## [Video](#video)
+## Video
 This is our video for the open challenge!
 [Click here!](https://youtu.be/54i8wre7FL8)
