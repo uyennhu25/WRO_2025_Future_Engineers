@@ -43,9 +43,9 @@ Our README consists of:
 Here is our hardware documentation.
 <h3>Our main goal for the development of our chassis</h3>
 
-Low center of gravity
-Lightweight
-Minimum Size
+Low center of gravity  
+Lightweight  
+Minimum Size  
 
 ### Chassis material choice: LEGO and PLA
 
@@ -159,5 +159,5 @@ After the robot completes 3 laps, the robot will align with the same method used
 </table>
 
 ## Video
-This is our video for the open challenge!
+This is our video for the open challenge!  
 [Click here!](https://youtu.be/54i8wre7FL8)
