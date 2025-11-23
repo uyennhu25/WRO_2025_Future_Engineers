@@ -83,6 +83,18 @@ For our steering compartment, we utilize the Technic Powered up XL motor with a 
   <img src="Chassis, Motor and Processing Unit/Images/Powered Up Motors.png" width="600">
 </p>
 
+### Wheel Choice: 62.3mm technic for rear wheels and 49.5 spike for front wheels 
+For the rear wheel, we need a wheel with great width and diameter for higher grip and better acceleration. Thereforem, we choose the technic 62.3mm tire for our rear wheels. Mean while, at the front, the wheels need to have small diameter so it has the most agility, so we choose the 49.5mm spike wheels.
+<p align="center">
+  <img src="Chassis, Motor and Processing Unit/Images/Frontandrear.png" width="600">
+</p>
+
+### Ultrasonic sensor
+By determining whether there is a wall to the right hand side of the robot, it can determine which direction is its obstacle challenge going to be (Clockwise vs Counterclockwise)
+<p align="center">
+  <img src="Chassis, Motor and Processing Unit/Images/ultrasonic.png" width="600">
+</p>
+
 
 ### Differential drivetrain
 
@@ -94,10 +106,13 @@ During cornering scenarios, the two rear wheels must rotate at different angular
 
 ### Ackermann Steering
 
+Ackermann steering is a geometric steering principle used in vehicles to ensure sefficient turning. It works by angling the front wheels so the left and right wheels follow different turning radius to each other, allowing all wheels to roll without slipping. The inner wheel turns more sharply than the outer wheel because it traces a smaller circle. This mechanism is critical to our robot because of the accuracy that it provides.
+
 Upon steering, the inner side of the robot facing the center of the rotation aligns with a circle of a smaller radius, which has a tangent of a different angle compared to the outer circle. In order to achieve the maximum turning effect, the wheel need to steer at a different angle in order to accommodate the tangents, and we will use ackermann steering to achieve this.
+
 <p align="center">
   <img src="Chassis, Motor and Processing Unit/Images/Ackermann.png" width="350">
-  <img src="Chassis, Motor and Processing Unit/Images/Ackermann_2.png" width="350">
+  <img src="Chassis, Motor and Processing Unit/Images/Ackermann_1.png" width="350">
 </p>
 
 ### Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack
@@ -125,10 +140,13 @@ In addition to the main boxes, we include two small boxes at the bottom of the f
 ### Obstacle Challenge
 
 Scenario 1: Traffic signs visible
-The camera detects a region of high density of either red or green in the field. It will draw a rectangle box around the block. For the robot to avoid the sign in the desired direction, the boxes must align with the two lines. Therefore, by measuring the distance between the base of the rectangles and the lines, an error value can be calculated and used for PID steering.
+The camera detects a region of high density of either red or green in the field. It will draw a rectangle box around the block. The robot will use PD algorithms adjust the robot so it encounters the block directly. By measuring the width of the image captured, the robot can estimate the distance between the robot and the block, and when the width is above 60 pixels, it means that the robot finds the block really close and will engage a fixed maneuver. However, in some scenarios, the robot may find the blocks too close to it, so if the block's width is above 90 pixels, the robot will backdown several centimeters before engaging the maneuver. 
 
 <p align="center">
-  <img src="Programming/Images/Obstacle%20Diagram.png" width="600">
+  <img src="Programming/Images/Diagram1.png" width="600">
+</p>
+<p align="center">
+  <img src="Programming/Images/Diagram2.png" width="600">
 </p>
 
 Scenario 2: Passed all traffic signs
@@ -161,3 +179,5 @@ After the robot completes 3 laps, the robot will align with the same method used
 ## Video
 This is our video for the open challenge!  
 [Click here!](https://youtu.be/54i8wre7FL8)
+This is our video for the obstacle challenge!
+[Click here!](https://www.youtube.com/watch?v=SsX73BRtf50)
