@@ -3,7 +3,7 @@ This is the GitHub repository of team NSWRO for the WRO 2025 Future Engineers Ca
 ![](/Team/Images/NSWRO.png)
 
 ## Content
-`Chassis, Motor and Porcessing Unit` This folder includes diagrams and images featuring the components of our robot.  
+`Chassis, Motor and Processing Unit` This folder includes diagrams and images featuring the components of our robot.  
 `Programming` This folder includes the programs and their corresponding illustrations.  
 `Robot` This folder includes images of our robots from all views.  
 `Team` These are the photos of our team!  
