@@ -150,7 +150,10 @@ In addition to the main boxes, we include two small boxes at the bottom of the f
 
 ### Obstacle Challenge
 
-Scenario 1: Traffic signs visible
+## How we detect the blocks
+We will create specific threseholds for the colors (Black, Red, Green and Magenta). When a pixels is registered to be within these thresholds, it will be counted. When a group of counted pixels are close to each other, a rectangle will be drawn around them and will be identified as a blob. We also have a threshold for the area of the rectangle so any small noises will be removed. Also, further down, we can use a function to measure the density of counted pixels in the blobs: b.density(). If the value from this function is too low, the blob will be ignored.
+
+## Scenario 1: Traffic signs visible
 The camera detects a region of high density of either red or green in the field. It will draw a rectangle box around the block. The robot will use PD algorithms adjust the robot so it encounters the block directly. By measuring the width of the image captured, the robot can estimate the distance between the robot and the block, and when the width is above 60 pixels, it means that the robot finds the block really close and will engage a fixed maneuver. However, in some scenarios, the robot may find the blocks too close to it, so if the block's width is above 90 pixels, the robot will backdown several centimeters before engaging the maneuver. 
 
 <p align="center">
@@ -160,8 +163,10 @@ The camera detects a region of high density of either red or green in the field.
   <img src="Programming/Images/Diagram2.png" width="600">
 </p>
 
-Scenario 2: Passed all traffic signs
-When no color of red or green is visible, the robot will infer that it has passed all traffic signs.  Now, a box is drawn on the left side of the camera, and the robot will attempt to drive relatively close to the wall, filling the box with 70% black color. The difference between the black color fill of the box and the 70% threshold is used for PID turning. Another box is drawn in the middle, and when the blue line touches that block, it will know that it needs to start turning. By doing so, the robot will be given the maximum possible turning angle, and when it completes turning, the distance from it to the incoming sign will be far, allowing it to make a lot of changes in course before executing a  maneuver around the line
+## Scenario 2: Passed all traffic signs
+
+
+When no color of red or green is visible, the robot will infer that it has passed all traffic signs.  Now, a box is drawn on the left side of the camera, and the robot will attempt to drive relatively close to the wall, filling the box with 70% black color. The difference between the black color fill of the box and the 70% threshold is used for PID turning. Another box is drawn in the middle, and when the blue line touches that block, it will know that it needs to start turning. By doing so, the robot will be given the maximum possible turning angle, and when it completes turning, the distance from it to the incoming sign will be far, allowing it to make a lot of changes in course before executing a  maneuver around the line. However, the magenta walls can distort the black color of the wall, so that the density of color black will decrease. To mitigate this effect, we also add the magenta pixels to the rectangles so it will also avoid the parking lot besides the wall.
 
 <p align="center">
   <img src="Programming/Images/Scenario 2.png" width="600">
@@ -188,7 +193,9 @@ After the robot completes 3 laps, the robot will align with the same method used
 </table>
 
 ## Video
-This is our video for the open challenge!  
+
+# This is our video for the open challenge!  
 [Click here!](https://youtu.be/54i8wre7FL8)
-This is our video for the obstacle challenge!
+
+# This is our video for the obstacle challenge!
 [Click here!](https://www.youtube.com/watch?v=SsX73BRtf50)
