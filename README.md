@@ -143,6 +143,8 @@ We also have a box at the center of the frame. When a color between orange or bl
 
 In addition to the main boxes, we include two small boxes at the bottom of the frame. These bottom boxes only turn black when the robot has moved into a position where the front boxes can no longer see the black line and the robot is very close to the wall. When both bottom boxes detect black, the robot enters a priority correction mode, where steering decisions rely on the bottom boxes instead of the main ones. This prevents the robot from hugging the wall or losing the track when the front sensors no longer provide reliable data.
 
+There will be a default error which will be put into the program so that the robot will stick to the wall. For example, when the robot is close to the inside wall and the wall error is -30, which means the robot needs to turn right, a default error of 30 will be added to neutralise the error. Like this, the robot will follow the walls very tightly, minimizing lap time.
+
 ![](/Programming/Images/Open%201)
 ![](/Programming/Images/Open%202.png)
 
