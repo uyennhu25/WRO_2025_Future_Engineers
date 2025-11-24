@@ -148,7 +148,7 @@ Ver 1 design:
   <tr>
     <td><img src="/Robot/Images/ver1/back_view.png" width="200"><br>Back view</td>
     <td><img src="/Robot/Images/ver1/top_view.png" width="200"><br>Top view</td>
-    <td><img src="/Robot/Images/ver1/bottom_view.png" width="200"><br>Bottom view</td>
+    <td><img src="/Robot/Images/ver1/bot_view.png" width="200"><br>Bottom view</td>
   </tr>
 </table>
 
@@ -275,3 +275,12 @@ More rigorous testing and data collection will help us understand every small fa
 We aim to make our workflow faster and more organized, using simulations to test new ideas before building them and keeping all programming changes well documented. This will allow us to iterate more quickly and reduce mistakes during preparation.
 
 Every improvement we make is an opportunity to learn and push the robot further. We are excited to keep testing, learning, and building because each upgrade brings us closer to a more precise, stable, and faster robot.
+
+## Conclusion 
+This robot is the result of dozens of small decisions, failed tests, late-night fixes, and the steady growth of us learning how to engineer something real. Every part of the design — from steering geometry to sensor to how the chassis holds everything; comes from trial, reflection, and choosing the option that makes the robot more predictable and effective on the field.
+
+The robot you see in this repsoitory is stable enough to run the challenges, but it’s nowhere near our limit. We’re already planning lighter frames, better gearing, more advanced vision, and cleaner code so the next iteration can run faster and steer smoother.
+
+This documentation is here not just for judging, but to show our process openly. Anyone reading it should be able to rebuild what we built, see the decisions we made, and understand how each part affects the robot’s performance. We want to demonstrate that we’re learning real engineering and applying our knowledge into a real-life product.
+
+We’re proud of how far this version has come, and even more excited about the versions that will come after. Each improvement pulls us closer to a robot that feels less like a school project and more like a machine we engineered together from the ground up. That’s the direction we’re aiming for next.
