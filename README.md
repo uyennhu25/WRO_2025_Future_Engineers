@@ -41,11 +41,11 @@ Our README consists of:
 
 ## Chassis, Motor and Processing unit
 Here is our hardware documentation.
-<h3>Our main goal for the development of our chassis</h3>
+We aimed for a chassis that stays planted, moves fast, and wastes zero space. The key goals were:
 
-Low center of gravity  
-Lightweight  
-Minimum Size  
+A low center of gravity to keep the robot stable during sharp turns and sudden accelerations.
+A lightweight structure to make movement smoother and reduce strain on the motors.
+A minimal size to improve maneuverability and reduce drag.
 
 ### Chassis material choice: LEGO and PLA
 
@@ -132,6 +132,13 @@ In the diagram below, as you can see, the A axis runs from left to right, toward
 <p align="center">
   <img src="Chassis, Motor and Processing Unit\Images\lab-color-space.png" width="400">
 </p>
+
+### Transition from ver 1 to ver 2
+
+Originally, for our robot design, we utilised an elevated camera, as well as a longer and bigger robot design. This allowed us to have a wider viewing angle surrounding the robot, allowing our navigation system to be more efficient. However, the camera required many reinforcements surrounding it to stabilize. Moreover, the bulkier build made the robot more unstable, leading to frequent drifts while moving. Overall, this made the design much less consistent than our expectation, and this is why we switched to a newer design.
+
+Our new robot is overall shorter, and most of its mass is concentrated at a lower point. This lowers its centre of mass, thus making the robot more stable while steering, especially at tight angles. Next, the choice of placing the camera right in front of the camera instead of placing it at an elevated point allows for the viewing angle to still be at a viable position while removing all of the unnecessary scaffolding of the elevated camera. Besides this, we decided to 3D print the pieces for the Reverse-Ackermann Steering. We were able to remove unnecessary components of the original 3x3 Bent Perpendicular Pin Connector. This helped us shorten the length of the vehicle a bit more. Finally, by changing the back wheel from the Lego Spike wheels to a 62.4 mm Lego Wheel, we increased the friction of the driving wheel to the driving field. All of this helped make our robot more optimized, and improved our driving and navigation greatly.
+
 
 ## Programming
 Here is our software documentation
