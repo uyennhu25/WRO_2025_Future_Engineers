@@ -33,14 +33,14 @@ Our README consists of:
 <h4>Cao Tung Lam (on the right)</h4>
     Lam is the most experienced team member. He has competed in WRO for three seasons. He has won acclaim by finishing 8th in the Junior Robomission category in 2024. This year, looking to enrich and diversify his experience in robotics, he chose Future Engineer to bolster his knowledge with new engineering concepts and new programming experience.
 
-<h3>Do Cong Danh (on the left)</h3>
+<h4>Do Cong Danh (on the left)</h4>
    This season is not Danh's first season, but it is his first season in such a high skill level environment. His contribution in this team is designing and assemblying the robot, assemblying the field. He also discovered many engineering principles which help our robot develop.
 
-<h3>Nguyen Uyen Nhu (in the middle)</h3>
-    Just like Do, this is Nhu's first season in WRO. However, her rich experience with programming and GitHub helped her build this impressive repository. Furthermore, he aided Lam in the programming process, making the programmes more efficient and the algorithms to be more accurate.
+<h4>Nguyen Uyen Nhu (in the middle)</h4>
+    Just like Do, this is Nhu's first season in WRO. However, her rich experience with programming and GitHub helped her build this impressive repository. Furthermore, he aided Lam in the programming process, making the programmes more efficient and the algorithms to be more accurate.    
 
 Together, we function as a team that learns quickly from mistakes, shares ideas openly, and celebrates each small improvement. Every test run, every redesign, and every line of code is a step forward, and we are motivated by the chance to be the first team from Vietnam in this category.
-
+    
 
 ## Chassis, Motor and Processing unit
 Here is our hardware documentation.
@@ -49,13 +49,13 @@ We aimed for a chassis that stays planted, moves fast, and wastes zero space. Th
 A low center of gravity to keep the robot stable during sharp turns and sudden accelerations.
 A lightweight structure to make movement smoother and reduce strain on the motors.
 A minimal size to improve maneuverability and reduce drag.
-
+  
 ### Chassis material choice: LEGO and PLA
 
 We start the development of our robot using LEGO because we have extensive experience with building and assembling LEGO models. Lam participated in WRO 2023 and WRO 2024 in the Junior Category, so he is very familiar with building robots with LEGO as the main material.
 
 We 3D print several parts which does not exist in the current LEGO collection; they can accommodate LEGO just as good as authentic LEGO pieces, and the freedom of customisation helps us with reaching our main design principles with the chassis.
-
+  
 ### Processing Unit: LEGO® Education SPIKE™ Prime
    
 We choose LEGO processing units, Spike Prime or Mindstorm EV3, over Arduino or Raspberry Pi because our experience shows that we can execute complicated algorithms at an acceptable level.
@@ -74,7 +74,7 @@ Between EV3 and Spike Prime, we chose Spike Prime even though the central proces
   </div>
   <img src="Chassis, Motor and Processing Unit/Images/EV3 vs Spike.png" width="400" style="margin-left: 20px;" />
 </div>
-
+  
 ### Motors: Technic™ Large Motor L and XL
    
 With a LEGO chassis, we can opt for LEGO motors, which are way lighter than other pervasive, conventional robotics motors such as the GA25 370. Even though the torque figures and RPM are not as impressive, the benefit of having a manageable wiring system and light plastic case definitely outweighs this disadvantage.
@@ -85,20 +85,20 @@ For our steering compartment, we utilize the Technic Powered up XL motor with a 
 <p align="center">
   <img src="Chassis, Motor and Processing Unit/Images/Powered Up Motors.png" width="600">
 </p>
-
+  
 ### Wheel Choice: 62.3mm technic for rear wheels and 49.5 spike for front wheels 
 For the rear wheel, we need a wheel with great width and diameter for higher grip and better acceleration. Thereforem, we choose the technic 62.3mm tire for our rear wheels. Mean while, at the front, the wheels need to have small diameter so it has the most agility, so we choose the 49.5mm spike wheels.
 <p align="center">
   <img src="Chassis, Motor and Processing Unit/Images/Frontandrear.png" width="600">
 </p>
-
+  
 ### Ultrasonic sensor
 By determining whether there is a wall to the right hand side of the robot, it can determine which direction is its obstacle challenge going to be (Clockwise vs Counterclockwise)
 <p align="center">
   <img src="Chassis, Motor and Processing Unit/Images/ultrasonic.png" width="600">
 </p>
 
-
+  
 ### Differential drivetrain
 
 During cornering scenarios, the two rear wheels must rotate at different angular velocities to maintain the difference between the radius of the two circles accommodated by the inner wheel and outer wheel. Therefore, we implement a differential system.
@@ -106,7 +106,7 @@ During cornering scenarios, the two rear wheels must rotate at different angular
 <p align="center">
   <img src="Chassis, Motor and Processing Unit/Images/Differential.png" width="600">
 </p>
-
+  
 ### Ackermann Steering
 
 Ackermann steering is a geometric steering principle used in vehicles to ensure sefficient turning. It works by angling the front wheels so the left and right wheels follow different turning radius to each other, allowing all wheels to roll without slipping. The inner wheel turns more sharply than the outer wheel because it traces a smaller circle. This mechanism is critical to our robot because of the accuracy that it provides.
@@ -117,7 +117,7 @@ Upon steering, the inner side of the robot facing the center of the rotation ali
   <img src="Chassis, Motor and Processing Unit/Images/Ackermann.png" width="350">
   <img src="Chassis, Motor and Processing Unit/Images/Ackermann_1.png" width="350">
 </p>
-
+  
 ### Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack
 
 We use Matrix Robotics's M-Vision Cam over other cameras because it has a processing unit inside the camera itself. Consequently, the LEGO Spike Prime Hub does not have to execute extra image processing algorithms, prolonging the battery life and maintaining a healthy load on the processing unit.
@@ -135,14 +135,14 @@ In the diagram below, as you can see, the A axis runs from left to right, toward
 <p align="center">
   <img src="Chassis, Motor and Processing Unit\Images\lab-color-space.png" width="400">
 </p>
-
+  
 ### Transition from ver 1 to ver 2
 
 Originally, for our robot design, we utilised an elevated camera, as well as a longer and bigger robot design. This allowed us to have a wider viewing angle surrounding the robot, allowing our navigation system to be more efficient. However, the camera required many reinforcements surrounding it to stabilize. Moreover, the bulkier build made the robot more unstable, leading to frequent drifts while moving. Overall, this made the design much less consistent than our expectation, and this is why we switched to a newer design.
 
 Our new robot is overall shorter, and most of its mass is concentrated at a lower point. This lowers its centre of mass, thus making the robot more stable while steering, especially at tight angles. Next, the choice of placing the camera right in front of the camera instead of placing it at an elevated point allows for the viewing angle to still be at a viable position while removing all of the unnecessary scaffolding of the elevated camera. Besides this, we decided to 3D print the pieces for the Reverse-Ackermann Steering. We were able to remove unnecessary components of the original 3x3 Bent Perpendicular Pin Connector. This helped us shorten the length of the vehicle a bit more. Finally, by changing the back wheel from the Lego Spike wheels to a 62.4 mm Lego Wheel, we increased the friction of the driving wheel to the driving field. All of this helped make our robot more optimized, and improved our driving and navigation greatly.
 
-
+  
 ## Programming
 Here is our software documentation
 ### Open Challenge
@@ -183,14 +183,14 @@ In addition to the main boxes, we include two small boxes at the bottom of the f
 
 There will be a default error which will be put into the program so that the robot will stick to the wall. For example, when the robot is close to the inside wall and the wall error is -30, which means the robot needs to turn right, a default error of 30 will be added to neutralise the error. Like this, the robot will follow the walls very tightly, minimizing lap time.
 
-
+    
 
 
 ### Obstacle Challenge
 
 ## How we detect the blocks
 We will create specific threseholds for the colors (Black, Red, Green and Magenta). When a pixels is registered to be within these thresholds, it will be counted. When a group of counted pixels are close to each other, a rectangle will be drawn around them and will be identified as a blob. We also have a threshold for the area of the rectangle so any small noises will be removed. Also, further down, we can use a function to measure the density of counted pixels in the blobs: b.density(). If the value from this function is too low, the blob will be ignored.
-
+  
 ## Scenario 1: Traffic signs visible
 The camera detects a region of high density of either red or green in the field. It will draw a rectangle box around the block. The robot will use PD algorithms adjust the robot so it encounters the block directly. By measuring the width of the image captured, the robot can estimate the distance between the robot and the block, and when the width is above 60 pixels, it means that the robot finds the block really close and will engage a fixed maneuver. However, in some scenarios, the robot may find the blocks too close to it, so if the block's width is above 90 pixels, the robot will backdown several centimeters before engaging the maneuver. 
 
@@ -200,7 +200,7 @@ The camera detects a region of high density of either red or green in the field.
 <p align="center">
   <img src="Programming/Images/Diagram2.png" width="600">
 </p>
-
+  
 ## Scenario 2: Passed all traffic signs
 
 
@@ -215,7 +215,7 @@ After the robot completes 3 laps, the robot will align with the same method used
 <p align="center">
   <img src="Programming/Images/Parking%20Diagram.png" width="600">
 </p>
-
+  
 ## Vehicle Images
 <table>
   <tr>
@@ -229,13 +229,13 @@ After the robot completes 3 laps, the robot will align with the same method used
     <td><img src="/Robot/Images/ver2/bottom_view.png" width="200"><br>Bottom view</td>
   </tr>
 </table>
-
+  
 ## Video
 
-# This is our video for the open challenge!  
+### This is our video for the open challenge!  
 [Click here!](https://youtu.be/54i8wre7FL8)
 
-# This is our video for the obstacle challenge!
+### This is our video for the obstacle challenge!
 [Click here!](https://www.youtube.com/watch?v=SsX73BRtf50)
 
 ## Future Improvements
