@@ -22,6 +22,7 @@ Our README consists of:
   - [Obstable challenge](#obstacle-challenge)
 - [Vehicle Images](#vehicle-images)
 - [Videos](#video)
+- [Future improvements](#future-improvements)
 
 ## Our Team
 ![](/Team/Images//Team%20Photo.jpg)
@@ -37,6 +38,8 @@ Our README consists of:
 
 <h3>Nguyen Uyen Nhu (in the middle)</h3>
     Just like Do, this is Nhu's first season in WRO. However, her rich experience with programming and GitHub helped her build this impressive repository. Furthermore, he aided Lam in the programming process, making the programmes more efficient and the algorithms to be more accurate.
+
+Together, we function as a team that learns quickly from mistakes, shares ideas openly, and celebrates each small improvement. Every test run, every redesign, and every line of code is a step forward, and we are motivated by the chance to be the first team from Vietnam in this category.
 
 
 ## Chassis, Motor and Processing unit
@@ -146,14 +149,40 @@ Here is our software documentation
    
 We draw two boxes on two sides. We set a threshold, and if a pixel has RGB value within the threshold, it will be counted as "black". In order for the robot at the middle of the path, the fill of the two boxes must be equal. Therefore, our algorithm compare the fill ratio of the two boxes and use PID turning for the steering.
 
+  ```
+Add = 200 if Cam_val[0]>10 and Cam_val[1]>10 else 0
+while GetColor() == 0:
+    steering(0)
+Drive.reset_angle(0)
+while abs(Drive.angle()) < Add:
+    steering(0)
+
+if GetColor() == 1:
+    ColorCondition = 1
+    Plus = -30
+else:
+    ColorCondition = -1
+    Plus = 40
+print(ColorCondition)
+for i in range (11):
+    while GetColor() != ColorCondition:
+        SteerCamOpen(ColorCondition, Plus)
+    while GetColor() == ColorCondition:
+        SteerCamOpen(ColorCondition, Plus)
+Drive.reset_angle(0)
+while abs(Drive.angle()) < 2000:
+    SteerCamOpen(ColorCondition, Plus)
+```
+
 We also have a box at the center of the frame. When a color between orange or blue touches this box, it will know when to start turning. If the box detects the blue line first, it can be inferred that the robot is running in the counterclockwise direction and vice versa.
 
 In addition to the main boxes, we include two small boxes at the bottom of the frame. These bottom boxes only turn black when the robot has moved into a position where the front boxes can no longer see the black line and the robot is very close to the wall. When both bottom boxes detect black, the robot enters a priority correction mode, where steering decisions rely on the bottom boxes instead of the main ones. This prevents the robot from hugging the wall or losing the track when the front sensors no longer provide reliable data.
 
-There will be a default error which will be put into the program so that the robot will stick to the wall. For example, when the robot is close to the inside wall and the wall error is -30, which means the robot needs to turn right, a default error of 30 will be added to neutralise the error. Like this, the robot will follow the walls very tightly, minimizing lap time.
-
 ![](/Programming/Images/Open%201)
 ![](/Programming/Images/Open%202.png)
+
+There will be a default error which will be put into the program so that the robot will stick to the wall. For example, when the robot is close to the inside wall and the wall error is -30, which means the robot needs to turn right, a default error of 30 will be added to neutralise the error. Like this, the robot will follow the walls very tightly, minimizing lap time.
+
 
 
 
@@ -208,3 +237,27 @@ After the robot completes 3 laps, the robot will align with the same method used
 
 # This is our video for the obstacle challenge!
 [Click here!](https://www.youtube.com/watch?v=SsX73BRtf50)
+
+## Future Improvements
+
+Even though our robot performs reliably, we are already thinking about how to make it better for future competitions.
+
+### Chassis Refinement
+We want to make the chassis even lighter without losing strength. Using smaller, more precise 3D printed parts can lower the center of mass and improve stability during sharp turns.
+
+### Motor and Gear Optimization
+We plan to experiment with different gear ratios and motor placements to increase torque and improve steering response. Testing these adjustments will help the robot handle tighter corners more confidently.
+
+### Camera and Vision System
+Upgrading the camera or adding more processing power could allow more advanced image analysis. This could help the robot detect obstacles faster, track lines more accurately, and adapt better to changes in lighting.
+
+### Software and Algorithm Enhancements
+We want to explore adaptive PID control that adjusts automatically depending on speed and track curvature. We also plan to improve obstacle detection using shape recognition and predictive algorithms to navigate complex sections more efficiently.
+
+### Testing and Data Analysis
+More rigorous testing and data collection will help us understand every small failure and success. By analyzing sensor logs, we can fine-tune every part of the robot for maximum performance.
+
+### Team Workflow
+We aim to make our workflow faster and more organized, using simulations to test new ideas before building them and keeping all programming changes well documented. This will allow us to iterate more quickly and reduce mistakes during preparation.
+
+Every improvement we make is an opportunity to learn and push the robot further. We are excited to keep testing, learning, and building because each upgrade brings us closer to a more precise, stable, and faster robot.
