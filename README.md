@@ -138,6 +138,20 @@ In the diagram below, as you can see, the A axis runs from left to right, toward
   
 ### Transition from ver 1 to ver 2
 
+Ver 1 design:  
+<table>
+  <tr>
+    <td><img src="/Robot/Images/ver1/front_view.png" width="200"><br>Front view</td>
+    <td><img src="/Robot/Images/ver1/left_view.png" width="200"><br>Left view</td>
+    <td><img src="/Robot/Images/ver1/right_view.png" width="200"><br>Right view</td>
+  </tr>
+  <tr>
+    <td><img src="/Robot/Images/ver1/back_view.png" width="200"><br>Back view</td>
+    <td><img src="/Robot/Images/ver1/top_view.png" width="200"><br>Top view</td>
+    <td><img src="/Robot/Images/ver1/bottom_view.png" width="200"><br>Bottom view</td>
+  </tr>
+</table>
+
 Originally, for our robot design, we utilised an elevated camera, as well as a longer and bigger robot design. This allowed us to have a wider viewing angle surrounding the robot, allowing our navigation system to be more efficient. However, the camera required many reinforcements surrounding it to stabilize. Moreover, the bulkier build made the robot more unstable, leading to frequent drifts while moving. Overall, this made the design much less consistent than our expectation, and this is why we switched to a newer design.
 
 Our new robot is overall shorter, and most of its mass is concentrated at a lower point. This lowers its centre of mass, thus making the robot more stable while steering, especially at tight angles. Next, the choice of placing the camera right in front of the camera instead of placing it at an elevated point allows for the viewing angle to still be at a viable position while removing all of the unnecessary scaffolding of the elevated camera. Besides this, we decided to 3D print the pieces for the Reverse-Ackermann Steering. We were able to remove unnecessary components of the original 3x3 Bent Perpendicular Pin Connector. This helped us shorten the length of the vehicle a bit more. Finally, by changing the back wheel from the Lego Spike wheels to a 62.4 mm Lego Wheel, we increased the friction of the driving wheel to the driving field. All of this helped make our robot more optimized, and improved our driving and navigation greatly.
