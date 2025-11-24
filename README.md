@@ -117,9 +117,20 @@ Upon steering, the inner side of the robot facing the center of the rotation ali
 
 ### Camera: Matrix Robotics M-Vision Cam with Type-C Cable Pack
 
-We use Matrix Robotics's M-Vision Cam over other cameras because it has a processing unit inside the camera itself. Consequently, the LEGO Spike Prime Hub does not have to execute extra image processing algorithms, prolonging the battery life and maintaining a healthy load on the processing unit
+We use Matrix Robotics's M-Vision Cam over other cameras because it has a processing unit inside the camera itself. Consequently, the LEGO Spike Prime Hub does not have to execute extra image processing algorithms, prolonging the battery life and maintaining a healthy load on the processing unit.
+
+The camera has the STM32H7 Processor, clocking 480Mhz, allowing it to perform heavy load tasks of image processing. Its operating voltage is 5 Volts so it completely matches the output voltage of the LEGO Spike prime hub. By connecting the correct cables with the LEGO Spike prime hub, the camera can communicate with the hub via UART communication interface and LPF2 data protocol. 
+
 <p align="center">
   <img src="Chassis, Motor and Processing Unit/Images/M Vision Cam.jpg" width="400">
+</p>
+
+This camera supports LAB Color space, which is extremely accurate for the condition on the field compared to traditional HSV or RGB. 
+
+In the diagram below, as you can see, the A axis runs from left to right, towards a red region. Meanwhile, the B axis runs toward yellow. Last, the L axis shows brightness, runs from dark to bright. The main reason why we choose this color space instead of RGB is because it seperates color from light. In the environment of the competition area, lightning might shift so the image may become darker or brighter unexpectedly. While this shift will cause a change in all three RGB Values, it only cause a shift in the L value of the LAB colorspace, the only parameter measuring brightness.
+
+<p align="center">
+  <img src="Chassis, Motor and Processing Unit\Images\lab-color-space.png" width="400">
 </p>
 
 ## Programming
